@@ -18,13 +18,21 @@
             padding: 1rem;
         }
         .title span {
-            color: #3b82f6;
+            color: #3b82f6; /* Warna biru untuk "OS" */
         }
         .card {
-            background-color: #1f2937;
+            background-color: #1f2937; /* Warna abu-abu gelap */
             padding: 1rem;
             border-radius: 0.5rem;
             margin-bottom: 1rem;
+        }
+        .card h2 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .note {
+            color: #9ca3af; /* Warna abu-abu terang */
+            font-size: 0.875rem;
         }
     </style>
 </head>
@@ -68,8 +76,64 @@
             </div>
         </div>
 
+        <!-- Device Specs -->
+        <div class="card">
+            <h2>POCO F4</h2>
+            <div class="space-y-2">
+                <div class="flex justify-between">
+                    <span>Snapdragon 870</span>
+                    <span class="text-gray-400">CPU</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>6.0 GB</span>
+                    <span class="text-gray-400">RAM</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>4500mAh</span>
+                    <span class="text-gray-400">Battery capacity</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>2400×1080</span>
+                    <span class="text-gray-400">Resolution</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>6.67" AMOLED</span>
+                    <span class="text-gray-400">Display</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>1.0.2.0.ULMCNXM</span>
+                    <span class="text-gray-400">OS version</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Camera specs</span>
+                    <span class="text-gray-400">Rear 64MP+8MP+2MP</span>
+                </div>
+                <div class="flex justify-between">
+                    <span></span>
+                    <span class="text-gray-400">Front 20MP</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Options -->
+        <div class="card">
+            <span>Detailed info and specs</span>
+        </div>
+        <div class="card">
+            <span>Back up and restore</span>
+        </div>
+        <div class="card">
+            <span>Factory reset</span>
+        </div>
+        <div class="card">
+            <span>Contributors</span>
+        </div>
+        <div class="card">
+            <span>Certification</span>
+        </div>
+
         <!-- Note -->
-        <div class="text-gray-400 text-xs mt-4">
+        <div class="note mt-4">
             Note: Hardware info, including CPU, battery capacity, screen size and resolution, and camera, is provided by Xiaomi labs, designers, and suppliers.
         </div>
     </div>
