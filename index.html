@@ -1,54 +1,84 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xiaomi HyperOS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .title span {
+            color: #3b82f6; /* Warna biru untuk "OS" */
+        }
+        .card {
+            background-color: #1f2937; /* Warna abu-abu gelap */
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .card h2 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .note {
+            color: #9ca3af; /* Warna abu-abu terang */
+            font-size: 0.875rem;
+        }
+    </style>
 </head>
-<body class="bg-black text-white font-sans">
-    <div class="px-4 w-full">
+<body>
+    <div class="container">
         <!-- Top Bar -->
-        <div class="flex justify-between items-center mb-4">
-            <div class="text-white text-sm">19:24</div>
+        <div class="flex justify-between items-center mb-6">
+            <div class="text-sm">19:23</div>
             <div class="flex space-x-2 items-center">
-                <i class="fas fa-signal text-white"></i>
-                <i class="fas fa-wifi text-white"></i>
-                <i class="fas fa-battery-three-quarters text-white"></i>
-                <div class="text-white text-sm">30%</div>
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-three-quarters"></i>
+                <div class="text-sm">30%</div>
             </div>
         </div>
 
         <!-- Back Arrow -->
-        <div class="mb-4">
-            <i class="fas fa-arrow-left text-white text-xl"></i>
+        <div class="mb-6">
+            <i class="fas fa-arrow-left text-xl"></i>
         </div>
 
         <!-- Title and Version -->
         <div class="text-center mb-8">
-            <h1 class="text-3xl font-bold">Xiaomi Hyper<span class="text-blue-500">OS</span></h1>
+            <h1 class="text-2xl font-bold title">Xiaomi Hyper<span>OS</span></h1>
             <p class="text-gray-400">HyperOS by xiaomi.eu</p>
             <p class="text-gray-400">1.0.2.0.ULMCNXM</p>
             <p class="text-gray-400">Stable</p>
         </div>
 
         <!-- Device Info -->
-        <div class="space-y-4">
-            <div class="bg-gray-800 p-4 rounded-lg w-full">
-                <div class="flex justify-between items-center">
-                    <span>Device name</span>
-                    <span class="text-gray-400">Dazai's Phone</span>
-                </div>
+        <div class="card">
+            <div class="flex justify-between">
+                <span>Device name</span>
+                <span class="text-gray-400">Dazai's Phone</span>
             </div>
-            <div class="bg-gray-800 p-4 rounded-lg w-full">
-                <div class="flex justify-between items-center">
-                    <span>Storage</span>
-                    <span class="text-gray-400">114.6 GB /128 GB</span>
-                </div>
+        </div>
+        <div class="card">
+            <div class="flex justify-between">
+                <span>Storage</span>
+                <span class="text-gray-400">114.6 GB /128 GB</span>
             </div>
         </div>
 
         <!-- Device Specs -->
-        <div class="bg-gray-800 p-4 rounded-lg mt-4 w-full">
-            <h2 class="text-xl font-bold mb-2">POCO F4</h2>
+        <div class="card">
+            <h2>POCO F4</h2>
             <div class="space-y-2">
                 <div class="flex justify-between">
                     <span>Snapdragon 870</span>
@@ -86,26 +116,24 @@
         </div>
 
         <!-- Additional Options -->
-        <div class="space-y-4 mt-4">
-            <div class="bg-gray-800 p-4 rounded-lg w-full">
-                <span>Detailed info and specs</span>
-            </div>
-            <div class="bg-gray-800 p-4 rounded-lg w-full">
-                <span>Back up and restore</span>
-            </div>
-            <div class="bg-gray-800 p-4 rounded-lg w-full">
-                <span>Factory reset</span>
-            </div>
-            <div class="bg-gray-800 p-4 rounded-lg w-full">
-                <span>Contributors</span>
-            </div>
-            <div class="bg-gray-800 p-4 rounded-lg w-full">
-                <span>Certification</span>
-            </div>
+        <div class="card">
+            <span>Detailed info and specs</span>
+        </div>
+        <div class="card">
+            <span>Back up and restore</span>
+        </div>
+        <div class="card">
+            <span>Factory reset</span>
+        </div>
+        <div class="card">
+            <span>Contributors</span>
+        </div>
+        <div class="card">
+            <span>Certification</span>
         </div>
 
         <!-- Note -->
-        <div class="text-gray-400 text-xs mt-4">
+        <div class="note mt-4">
             Note: Hardware info, including CPU, battery capacity, screen size and resolution, and camera, is provided by Xiaomi labs, designers, and suppliers.
         </div>
     </div>
