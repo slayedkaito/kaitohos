@@ -34,6 +34,9 @@
             color: #9ca3af; /* Warna abu-abu terang */
             font-size: 0.875rem;
         }
+        .back-button {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -51,7 +54,7 @@
 
         <!-- Back Arrow -->
         <div class="mb-6">
-            <i class="fas fa-arrow-left text-xl"></i>
+            <i class="fas fa-arrow-left text-xl back-button" onclick="goToLandingPage()"></i>
         </div>
 
         <!-- Title and Version -->
@@ -165,6 +168,11 @@
             });
         } else {
             document.getElementById('battery').textContent = 'Battery Info Not Supported';
+        }
+
+        // Redirect to landing page
+        function goToLandingPage() {
+            window.location.href = "https://slayedkaito.github.io";
         }
     </script>
 </body>
